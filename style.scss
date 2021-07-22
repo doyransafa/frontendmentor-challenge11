@@ -1,0 +1,185 @@
+$Blue: rgb(79, 125, 243);
+$Pale-Blue: hsl(223, 100%, 88%);
+$Light-Red: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$Dark-Blue: hsl(209, 33%, 12%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "LibreFranklin", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+// img/logo stuff
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 60px;
+    margin: 60px 0;
+}
+
+.hero-img {
+    margin: 20px 0;
+}
+
+.fab {
+    color: $Blue;
+    border: 1px solid $Pale-Blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: top;
+    line-height: 30px !important;
+    margin: 0 5px;
+}
+
+.fab:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: $Blue;
+}
+
+.socials {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+// font stuff
+
+h1 {
+    color: $Gray;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.h1-bold {
+    color: $Dark-Blue;
+    font-weight: 700;
+}
+
+h2 {
+    color: $Dark-Blue;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer {
+    p {
+        font-size: 10px;
+        color: $Gray;
+    }
+}
+
+// container stuff
+
+.main-container {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+// form stuff
+
+.form {
+    margin: 30px 0;
+}
+
+.form-control {
+    border-style: none;
+    border: 1px solid $Pale-Blue;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 13px;
+    color: white;
+    margin: 10px 0px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: $Pale-Blue;
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.invalid-feedback {
+    font-size: 11px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button {
+    border-style: none;
+    background-color: $Blue;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 13px;
+    color: white;
+    margin: 10px 0px;
+    box-shadow: 0px 9px 16px 0px rgba(79,125,243,0.36);
+    -webkit-box-shadow: 0px 9px 16px 0px rgba(79,125,243,0.36);
+    -moz-box-shadow: 0px 9px 16px 0px rgba(79,125,243,0.36);
+    align-self: flex-start;
+}
+
+// media queries
+
+@media (min-width: 768px) {
+    
+    body {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .main-container {
+        max-width: 650px;
+        width: 90%;
+        margin: 0 auto;
+    }
+        
+    .form-control {
+        width: 72%;
+        order: 1;
+    }
+
+    .invalid-feedback {
+        width: 72%;
+        order: 3;
+        text-align: left;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
+    .socials {
+        margin: 20px;
+    }
+    
+}
